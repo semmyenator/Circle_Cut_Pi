@@ -85,7 +85,7 @@ Rely on a loop to continuously increase the number of polygon sides to improve e
 Set a tolerance range (TOLERANCE) to determine when to stop the loop and output results.
 The result includes the minimum number of polygon sides (n_sides) that meets the tolerance range and the corresponding estimate of π.
 
-#In-Depth Exploration of This Mathematical Problem:
+# In-Depth Exploration of This Mathematical Problem:
 Objective:
 To estimate the value of π (pi).
 Method:
@@ -124,7 +124,7 @@ Concept: Stop the loop when the difference between the inner and outer perimeter
 Implementation: if (pi_upper - pi_lower).abs() < TOLERANCE {...}
 Through these mathematical logical steps, we use the perimeters of inner and outer polygons to approximate and estimate the value of π until the specified precision is achieved.
 
-#More Detailed Verification of the Convergence and Accuracy of This Formula:
+# More Detailed Verification of the Convergence and Accuracy of This Formula:
 Verification Objectives:
 Convergence: Confirm that as n_sides increases, the estimated value approaches the true value of π.
 Accuracy: Verify that the estimated value can reach the true value of π within a given tolerance range (TOLERANCE).
@@ -156,7 +156,7 @@ Adjustment Suggestions (Optional):
 Consider increasing the initial value of n_sides to speed up convergence.
 The TOLERANCE value can be dynamically adjusted to balance accuracy and performance.
 
-#Understanding This Formula from a Geometric Perspective:
+# Understanding This Formula from a Geometric Perspective:
 Inner Perimeter of the Polygon (inner_perimeter): Visualization:
 Imagine a regular polygon inscribed in a circle (e.g., an equilateral triangle, square, pentagon, etc.).
 The radius of the circle is r (set to 1.0). Geometric Observation:
@@ -186,7 +186,7 @@ As n_sides increases, the inner perimeter (inner_perimeter) approaches the circu
 Similarly, as n_sides increases, the outer perimeter (outer_perimeter) also approaches the circumference of the circle (2πr) because the vertices of the polygon get closer to the arc of the circle.
 This formula utilizes these two approximations by averaging the inner and outer perimeters of the polygon to estimate the value of π.
 
-#Understanding This Formula from the Perspective of Integration:
+# Understanding This Formula from the Perspective of Integration:
 Inner Perimeter of the Polygon (inner_perimeter): Perspective:
 Imagine a circle (radius r) divided into n_sides equal sectors.
 Each sector has a central angle of dθ = 2π/n_sides.
@@ -215,7 +215,7 @@ The integral for the inner perimeter can be viewed as the total chord length alo
 The integral for the outer perimeter can be viewed as the total tangent length along the circle, approximated using the tangent function.
 This formula represents the discrete version of these integrals, using n_sides equal sectors to approximate the circumference of the circle.
 
-#Analyzing the Time Complexity of the Following Formulas:
+# Analyzing the Time Complexity of the Following Formulas:
 Formulas:
 inner_perimeter = n_sides * r * sin(π/n_sides)
 outer_perimeter = n_sides * r * tan(π/n_sides)
