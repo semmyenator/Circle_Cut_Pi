@@ -235,3 +235,5 @@ If a loop is used to calculate multiple π_estimate values, the total time compl
 Relationship with n_sides:
 It is important to note that the time complexity is not directly related to the value of n_sides. This is because the time complexities of sin, tan, multiplication, and division operations are all O(1).
 However, as n_sides increases, more loop iterations may be required (if a loop exists) to achieve the same level of accuracy, which could indirectly affect the overall time complexity.
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/semmyenator/Circle_Cut_Pi)
